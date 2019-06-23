@@ -1,0 +1,14 @@
+[package]
+name = "repro-424"
+version = "0.1.0"
+authors = ["Stepan Koltsov <stepan.koltsov@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0.90", features = ["derive"] }
+serde_bytes = "0.11.1"
+protobuf = { git = "https://github.com/stepancheg/rust-protobuf.git", branch = "master" }
+protoc-rust = { git = "https://github.com/stepancheg/rust-protobuf.git", branch = "master" }
+
+#[features]
+#default = ["with-serde"]

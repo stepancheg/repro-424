@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "rustproto.proto";
+option (rustproto.serde_derive_all) = true;
+
+message Header {
+    required uint32 msg_id = 1;
+}
